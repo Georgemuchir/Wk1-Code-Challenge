@@ -1,0 +1,34 @@
+Challenge 1: Student Grade Generator (Toy Problem)
+
+Write a function that prompts the user to input student marks. The input should be between 0 and 100. The output should correspond the correct grade, as shown below: 
+
+        A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
+        Sure! Here's a short explanation of the JavaScript function provided:
+
+### Function: `getStudentGrade`
+
+1. **Variable Declaration:**
+   - `let marks;` declares a variable to store the student's marks.
+
+2. **Input Validation Loop:**
+   - `while (true)` starts an infinite loop to repeatedly prompt the user until valid input is received.
+   - `marks = prompt("Enter student marks (0-100):");` prompts the user to input student marks and assigns it to `marks`.
+   - `marks = parseFloat(marks);` converts the input to a floating-point number.
+   - `if (!isNaN(marks) && marks >= 0 && marks <= 100)` checks if the input is a number between 0 and 100. If valid, the loop breaks. Otherwise, an alert prompts the user to enter a valid number.
+
+3. **Grade Determination:**
+   - `let grade;` declares a variable to store the grade.
+   - Conditional statements determine the grade based on the input marks:
+     - If `marks > 79`, grade is 'A'.
+     - If `marks >= 60`, grade is 'B'.
+     - If `marks >= 50`, grade is 'C'.
+     - If `marks >= 40`, grade is 'D'.
+     - Otherwise, grade is 'E'.
+
+4. **Display Grade:**
+   - `alert(`The grade is: ${grade}`);` displays the grade to the user using an alert.
+
+### Execution:
+- `getStudentGrade();` calls the function to execute the code, prompting the user to input marks, validating the input, determining the grade, and displaying it.
+
+CODE
